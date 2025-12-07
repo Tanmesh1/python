@@ -1,0 +1,25 @@
+print("Welcome to my quiz game")
+
+play = input("Do you want to play?(y/n) ")
+if play != 'y':
+    quit()
+
+print("Let's Play")
+answer = input("1.What does CPU stand for? ")
+if answer.lower() == 'central processing unit':
+    print("Correct Answer")
+else:
+    print("oops! It's as wrong answer")
+    
+answer = input("2. Which device is used to convert digital signals to analog signals for internet connection? ")
+if answer.lower() == 'modem':
+    print("Correct Answer")
+else:
+    print("oops! It's as wrong answer")
+    
+    
+answer = input("3. What is the main purpose of an operating system? ")
+if answer.lower() == 'to manage hardware resources and provide services for software applications.':
+    print("Correct Answer")
+else:
+    print("oops! It's as wrong answer")
