@@ -20,12 +20,12 @@ words = text_lower.split()          # creating an full array every word in text 
 
 for i,word in enumerate(words):
     if "sqft" in word  or "sqm" in word:
-        area_mention.append(word[i - 1] + " " + word )
+        area_mention.append(words[i - 1] + " " + word )
 
 budget_mentions = []
 for i,word in enumerate(words):
     if "usd" in word or "million" in word:
-        budget_mentions.append(word[i-1] + " " + word)
+        budget_mentions.append(words[i-1] + " " + word)
 
 
 output_data = {
