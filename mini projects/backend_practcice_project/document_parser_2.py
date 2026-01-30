@@ -1,3 +1,4 @@
+import sys
 import json
 
 def read_text_file(filename):
@@ -41,16 +42,22 @@ def save_output(data,output_file = "output.json"):
         json.dump(data,file,indent = 4)
 
 def main():
-    filename = "sample_input.txt"
-    text = read_text_file(filename)
-
-    if text is None:
+    if len(sys.argv) < 2:
+        print("Usage: python document_parser.py <input_file>")
         return
     
+    input_file = sys.argv[1]
+
+
+    text = read_text_file(input_file)
+    if text is None:
+        return 
+    
+
     result = analyze_file(text)
     save_output(result)
 
-    print("Analysis complete. Output written to output.json")
+    print(f"Analysis complete for '{input_file}', output written to output.json ")
 
 
 
