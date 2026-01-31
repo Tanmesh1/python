@@ -3,7 +3,7 @@
 
 def binary(arr,n):
     low = 0
-    high = len(arr) - 1
+    high = len(arr) 
     while(low <= high ):
         mid = (low + high)//2
         if arr[mid] == n:
@@ -38,8 +38,21 @@ print(binary(arr,n))
 
 
 def count(arr,n):
-    # Use Python's built-in count for correctness and simplicity
-    return arr.count(n)
+    low = 0
+    high = len(arr)
+    count = 0 
+    while(low <= high ):
+        mid = (low + high)//2
+        if arr[mid] == n:
+            count += 1
+            continue
+            print(count)
+           
+        elif arr[mid] < n:
+            low = mid +1
+        else:
+            high = mid - 1  
+    return count
 
 
 print(count(arr,n))
