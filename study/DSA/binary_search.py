@@ -56,3 +56,19 @@ def count(arr,n):
 
 
 print(count(arr,n))
+
+##binary search
+
+def bina(arr,n,x):
+    arr.sort()
+    low = 0
+    high = n-1
+    while(low <= high):
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            return arr[mid]
+        elif arr[mid] < x:
+            high = mid - 1
+        else:
+            low = mid + 1
+    return -1
