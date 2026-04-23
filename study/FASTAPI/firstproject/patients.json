@@ -1,0 +1,54 @@
+{
+  "P001": 
+    {
+      "id": "P001",
+      "first_name": "Amit",
+      "last_name": "Sharma",
+      "age": 34,
+      "gender": "Male",
+      "phone": "+91-9876543210",
+      "email": "amit.sharma@example.com"
+      
+    },
+    "P002":
+    {
+      "id": "P002",
+      "first_name": "Neha",
+      "last_name": "Patel",
+      "age": 28,
+      "gender": "Female",
+      "phone": "+91-9123456780",
+      "email": "neha.patel@example.com"
+    },
+    "P003":
+    {
+      "id": "P003",
+      "first_name": "Rahul",
+      "last_name": "Verma",
+      "age": 45,
+      "gender": "Male",
+      "phone": "+91-9988776655",
+      "email": "rahul.verma@example.com"
+    },
+    "P004":
+    {
+      "id": "P004",
+      "first_name": "Priya",
+      "last_name": "Nair",
+      "age": 31,
+      "gender": "Female",
+      "phone": "+91-9012345678",
+      "email": "priya.nair@example.com"
+    },
+    "P005":
+    {
+      "id": "P005",
+      "first_name": "Arjun",
+      "last_name": "Reddy",
+      "age": 52,
+      "gender": "Male",
+      "phone": "+91-8899776655",
+      "email": "arjun.reddy@example.com"
+    }
+  
+}
